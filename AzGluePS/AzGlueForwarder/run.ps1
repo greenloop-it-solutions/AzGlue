@@ -154,8 +154,6 @@ while ($attempt -gt 0 -and -not $SuccessfullQuery) {
 If (-not $DISABLE_ORGLIST_CSV) {
     # For organization specific data, only return records linked to the authorized client.
     if ($itgRequest.data.type -contains "organizations" -or 
-if ($itgRequest.data.type -contains "organizations" -or 
-    if ($itgRequest.data.type -contains "organizations" -or 
         $itgRequest.data[0].attributes.'organization-id') {
 
         $itgRequest.data = $itgRequest.data | Where-Object {
