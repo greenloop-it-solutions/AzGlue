@@ -87,6 +87,8 @@ configurations:
   - filter[name]
   - filter[psa_id]
   - filter[serial_number]
+  - filter[configuration_type_id]
+  - filter[configuration_status_id]
   - page[number]
   - page[size]
   required_parameters:
